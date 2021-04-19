@@ -1,6 +1,6 @@
 const items = require('../assets/data')
 
-exports.handler = async (event, context, cb) => {
+exports.handler = async (event, context) => {
     return {
         headers: {
             'Access-Control-Allow-Origin': '*',

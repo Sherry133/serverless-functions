@@ -9,7 +9,7 @@ const fetchData = async () => {
         // } = await axios.get('/api/2-basic-api');
         const {
             data
-        } = await axios.get('https://serverless-functions133.netlify.app/examples/2-basic-api/index.html');
+        } = await axios.get('https://serverless-functions133.netlify.app/examples/2-basic-api/');
 
         const products = data.map((product) => {
             const {
@@ -17,7 +17,7 @@ const fetchData = async () => {
                     url
                 },
                 name,
-                price
+                price,
             } = product
             return `<article class="product">
       <img
