@@ -4,9 +4,13 @@ const result = document.querySelector('.result');
 
 const fetchData = async () => {
     try {
+        // const {
+        //     data
+        // } = await axios.get('/api/2-basic-api');
         const {
             data
-        } = await axios.get('/api/2-basic-api');
+        } = await axios.get('https://serverless-functions133.netlify.app');
+
         const products = data.map((product) => {
             const {
                 image: {
