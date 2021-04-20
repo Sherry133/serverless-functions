@@ -9,7 +9,7 @@ const fetchData = async () => {
         // } = await axios.get('/api/2-basic-api');
         const {
             data
-        } = await axios.get('https://serverless-functions133.netlify.app/examples/2-basic-api/');
+        } = await axios.get('https://serverless-functions133.netlify.app/examples/2-basic-api/index.html');
 
         const products = data.map((product) => {
             const {
@@ -31,7 +31,7 @@ const fetchData = async () => {
         }).join("")
         result.innerHTML = products
     } catch (error) {
-        result.innerHTML = 'There was an error. Please try again.'
+        // result.innerHTML = 'There was an error. Please try again.'
     }
 
 }
